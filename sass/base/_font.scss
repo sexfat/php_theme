@@ -1,0 +1,17 @@
+// ----------------------------------------------------------------------
+// Font family
+// ----------------------------------------------------------------------
+@import "../layout/rwd";
+@import "../base/variables";
+body {
+  font-weight: normal; // font-family: $helvetica;
+  font-family: $system;
+  line-height: $line-height-base;
+  letter-spacing: inherit;
+}
+//font h1 - h6
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: nth(($font-size-h1,$font-size-h2,$font-size-h3,$font-size-h4,$font-size-h5,$font-size-h6),$i);
+  }
+}

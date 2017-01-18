@@ -1,0 +1,14 @@
+// ----------------------------------------------------------------------
+
+  // Retina Images
+
+// ----------------------------------------------------------------------
+
+// example: @include vector-bg-with-fallback("name.png");
+
+//$public_path: ./;
+
+@mixin vector-bg-with-fallback($name) {
+    background-image: url('#{$public_path}images/#{$name}.png');
+    background-image: none, url('#{$public_path}images/#{$name}.svg');
+}
