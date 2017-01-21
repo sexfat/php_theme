@@ -5,8 +5,8 @@ require('header.php');
 ?>
 <body>
   <?php
-     echo "My first PHP 我的php專案!";
-     echo "1+1"
+     echo "我的php專案!";
+     echo "1+8"
  ?>
 </body>
 </html>

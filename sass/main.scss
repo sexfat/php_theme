@@ -1,1 +1,22 @@
+//base
+@import "base/variables";
+@import "base/mixin";
 @import "base/reset";
+@import "base/font";
+@import "layout/grid";
+@import "layout/rwd";
+@import "vender/animation/animate";
+
+// @import "../../libs/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+//start
+.row {
+background-color: #7c5b5b;
+
+.text {
+  width: 400px;
+  @include margin-auto();
+  @include rem('margin' ,10);
+  }
+}
