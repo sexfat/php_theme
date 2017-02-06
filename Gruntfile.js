@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     hostname: '127.0.0.1',
-                    port: 8889,
+                    port: 3333,
                     base: 'dist' // Project root
                 }
             }
@@ -55,9 +55,10 @@ module.exports = function(grunt) {
                 },
                 options: {
                     proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
-                    port: 8889,
+                    port: 3333,
                     watchTask: true,
-                    open: true
+                    open: true,
+                    injectChanges: true
                 }
             },
             dev: {
